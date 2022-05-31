@@ -58,7 +58,7 @@ public class VisitanteBean {
 	public Visitante getVisitante() {
 		return visitante;
 	}
-
+	
 	public void setVisitante(Visitante visitante) {
 		this.visitante = visitante;
 	}
