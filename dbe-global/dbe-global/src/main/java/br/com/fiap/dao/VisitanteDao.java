@@ -17,7 +17,6 @@ public class VisitanteDao {
 
         manager.clear();
     }
-
     public List<Visitante> listAll() {
         TypedQuery<Visitante> query = manager.createQuery("SELECT u FROM Visitante u", Visitante.class);
         return query.getResultList();

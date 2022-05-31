@@ -8,9 +8,7 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
         
-        
         <!-- insira seus dados -->
-
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
             <property name="javax.persistence.jdbc.url"    value="jdbc:h2:mem:test" />
             <property name="javax.persistence.jdbc.user" value="sa" />

@@ -1,5 +1,4 @@
 package br.com.fiap.util;
-
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
