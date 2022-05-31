@@ -16,13 +16,10 @@ public class VisitanteBean {
 
     private Visitante visitante = new Visitante();
 
-    @Inject //injeção de dependencia
+    @Inject 
     private VisitanteDao dao;
 
     private UploadedFile image; 
-
-    <!-- clasee visitante -->
-
     public String save() {
         System.out.println("aqui " + this.visitante);
         visitante.setImagePath( UploadService.write(image, "visitantes"));
