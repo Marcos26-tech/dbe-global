@@ -7,6 +7,8 @@ import javax.persistence.Persistence;
 
 public class EntityManagerProducer {
 	
+	<!-- serva para gerenciar a entidade -->
+	
 	@Produces
 	public EntityManager getEntityManager(){
 		EntityManagerFactory factory = 

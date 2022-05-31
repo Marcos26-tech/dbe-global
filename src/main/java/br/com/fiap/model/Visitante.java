@@ -1,7 +1,5 @@
 package br.com.fiap.model;
-
 import java.time.LocalDate;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,7 +19,6 @@ public class Visitante {
     private LocalDate dataCadastro = LocalDate.now();
     private String imagePath;
 
-
     public String getImagePath() {
         return imagePath;
     }
@@ -30,11 +27,9 @@ public class Visitante {
         this.imagePath = imagePath;
     }
 
-
     public Visitante() {
         super();
     }
-
 
     public Visitante(Long idVisitante, String nomeVisitante, LocalDate dataNascimento, String numeroCpf,
                      String numeroRg, String numeroDigitoRg, LocalDate dataCadastro) {
@@ -48,11 +43,9 @@ public class Visitante {
         this.dataCadastro = dataCadastro;
     }
 
-
     public Long getIdVisitante() {
         return idVisitante;
     }
-
 
     public void setIdVisitante(Long idVisitante) {
         this.idVisitante = idVisitante;
@@ -63,66 +56,49 @@ public class Visitante {
         return nomeVisitante;
     }
 
-
     public void setNomeVisitante(String nomeVisitante) {
         this.nomeVisitante = nomeVisitante;
     }
-
 
     public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-
-
 
     public String getNumeroCpf() {
         return numeroCpf;
     }
 
-
-
     public void setNumeroCpf(String numeroCpf) {
         this.numeroCpf = numeroCpf;
     }
-
-
 
     public String getNumeroRg() {
         return numeroRg;
     }
 
-
-
     public void setNumeroRg(String numeroRg) {
         this.numeroRg = numeroRg;
     }
-
 
     public String getNumeroDigitoRg() {
         return NumeroDigitoRg;
     }
 
-
-
     public void setNumeroDigitoRg(String numeroDigitoRg) {
         NumeroDigitoRg = numeroDigitoRg;
     }
-
 
     public LocalDate getDataCadastro() {
         return dataCadastro;
     }
 
-
     public void setDataCadastro(LocalDate dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-
 
     @Override
     public String toString() {

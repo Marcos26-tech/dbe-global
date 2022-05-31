@@ -12,6 +12,5 @@
 		<pattern value="/visitante" />
 		<view-id value="visitante_new.xhtml" />
 	</url-mapping>
-
-
+	
 </pretty-config>

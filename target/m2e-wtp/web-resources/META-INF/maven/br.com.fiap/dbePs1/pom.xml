@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.fiap</groupId>
-    <artifactId>dbePs1</artifactId>
+    <artifactId>dbe-global</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <build>
@@ -25,7 +25,7 @@
             <version>11.0.0</version>
         </dependency>
 
-        <!-- Pretty Faces -->
+        <!-- Pretty Faces  -->
         <dependency>
             <groupId>org.ocpsoft.rewrite</groupId>
             <artifactId>rewrite-servlet</artifactId>
