@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="dbePs1/dbePs1/src/main/java"/>
+	<classpathentry kind="lib" path="dbePs1/dbePs1/target/dbePs1/WEB-INF/lib/primefaces-11.0.0.jar"/>
+	<classpathentry kind="lib" path="dbePs1/dbePs1/target/dbePs1/WEB-INF/lib/rewrite-config-prettyfaces-3.4.4.Final.jar"/>
+	<classpathentry kind="lib" path="dbePs1/dbePs1/target/dbePs1/WEB-INF/lib/rewrite-integration-faces-3.4.4.Final.jar"/>
+	<classpathentry kind="lib" path="dbePs1/dbePs1/target/dbePs1/WEB-INF/lib/rewrite-servlet-3.4.4.Final.jar"/>
+	<classpathentry kind="output" path="dbePs1/dbePs1/target/classes"/>
+</classpath>
