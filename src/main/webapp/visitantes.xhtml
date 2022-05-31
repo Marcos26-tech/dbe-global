@@ -15,55 +15,57 @@
 
         <h:form>
             <div class="card" style="margin:1em">
-                <p:dataTable var="setup" value="#{visitanteBean.all}" editable="true">
+                <p:dataTable var="visitante" value="#{visitanteBean.all}" editable="true">
 
-                    <p:column headerText="img">
+                    <p:column headerText="Imagem">
                         <img
-                                src="#{request.contextPath}#{visitanteBean.imagePath}"
+                                src="#{request.contextPath}#{visitante.imagePath}"
                                 class="thumb"
                         />
 
                     </p:column>
 
-                    <p:column headerText="id">
-                        <h:outputText value="#{visitanteBean.visitante.idVisitante}" />
+                    <p:column headerText="ID">
+                        <h:outputText value="#{visitante.idVisitante}" />
                     </p:column>
 
-                    <p:column headerText="Name">
+                    <p:column headerText="Nome">
                         <p:cellEditor>
                             <f:facet name="output">
-                                <h:outputText value="#{visitanteBean.visitante.nomeVisitante}" />
+                                <h:outputText value="#{visitante.nomeVisitante}" />
                             </f:facet>
                             <f:facet name="input">
-                                <p:inputText value="#{visitanteBean.visitante.nomeVisitante}" />
+                                <p:inputText value="#{visitante.nomeVisitante}" />
                             </f:facet>
                         </p:cellEditor>
                     </p:column>
 
-<!--                    <p:column headerText="Description">-->
-<!--                        <h:outputText value="#{setup.description}" />-->
-<!--                    </p:column>-->
+                    <p:column headerText="Data de Nascimento">
+                        <h:outputText value="#{visitante.dataNascimento}" >
+                            <f:convertDateTime pattern="dd/MM/yyyy" type="localDate"/>
+                        </h:outputText>
+                    </p:column>
 
-<!--                    -->
-<!--                    <p:column headerText="Price">-->
-<!--                        <h:outputText value="#{setup.price}" />-->
-<!--                    </p:column>-->
+                    <p:column headerText="CPF">
+                        <h:outputText value="#{visitante.numeroCpf}" />
+                    </p:column>
 
-<!--                    <p:column headerText="del">-->
-<!--                        <p:commandButton action="#{setupBean.remove(setup)}" value="apagar" />-->
-<!--                        <p:commandButton action="#{setupBean.remove(setup)}" title="remove setup" type="button" icon="pi pi-trash" styleClass="rounded-button ui-button-danger ui-button-flat" />-->
-<!--                    </p:column>-->
+                    <p:column headerText="RG">
+                        <h:outputText value="#{visitante.numeroRg}" />
+                        <h:outputText value="-#{visitante.numeroDigitoRg}" />
+                    </p:column>
 
-<!--                    <p:column style="width:6rem">-->
-<!--                        <p:rowEditor editTitle="Edit Row" cancelTitle="Cancel Edit" saveTitle="Save Row"/>-->
-<!--                    </p:column>-->
+                    <p:column headerText="Data de Cadastro">
+                        <h:outputText value="#{visitante.dataCadastro}">
+                            <f:convertDateTime pattern="dd/MM/yyyy" type="localDate"/>
+                        </h:outputText>
+                    </p:column>
+
                 </p:dataTable>
             </div>
         </h:form>
 
     </ui:define>
 </ui:composition>
-
-
 
 </html>

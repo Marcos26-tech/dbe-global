@@ -1,6 +1,7 @@
-# dbe-global
-gs
+## dbe-global
 
-#Marcos Maciel rm88267
+# marcos maciel RM 88267
 
-#Vitoria Akemi rm88077
+# vitoria akemi tanimura RM 88077
+
+# Adicionar a pasta Visitantes para carregamento de foto.

@@ -15,27 +15,27 @@
 
         <h:form>
             <div class="card" style="margin:1em">
-                <p:dataTable var="setup" value="#{visitanteBean.all}" editable="true">
+                <p:dataTable var="visitante" value="#{visitanteBean.all}" editable="true">
 
                     <p:column headerText="img">
                         <img
-                                src="#{request.contextPath}#{visitanteBean.imagePath}"
+                                src="#{request.contextPath}#{visitante.imagePath}"
                                 class="thumb"
                         />
 
                     </p:column>
 
                     <p:column headerText="id">
-                        <h:outputText value="#{visitanteBean.visitante.idVisitante}" />
+                        <h:outputText value="#{visitante.idVisitante}" />
                     </p:column>
 
                     <p:column headerText="Name">
                         <p:cellEditor>
                             <f:facet name="output">
-                                <h:outputText value="#{visitanteBean.visitante.nomeVisitante}" />
+                                <h:outputText value="#{visitante.nomeVisitante}" />
                             </f:facet>
                             <f:facet name="input">
-                                <p:inputText value="#{visitanteBean.visitante.nomeVisitante}" />
+                                <p:inputText value="#{visitante.nomeVisitante}" />
                             </f:facet>
                         </p:cellEditor>
                     </p:column>

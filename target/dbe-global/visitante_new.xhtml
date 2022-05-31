@@ -38,31 +38,36 @@
                           pattern="dd/MM/yyyy"
                           value="#{visitanteBean.visitante.dataNascimento}"
                           required="true"
-                          requiredMessage="O campo data é obrigatório"/>
-<!--              <f:ajax event="blur" render="msg" />-->
+                          requiredMessage="O campo data é obrigatório"
+                          />
           </div>
           <div class="p-field">
             <label for="cpf">CPF</label>
-            <p:inputNumber
+            <p:inputText
                     id="cpf"
+                    type="text"
                     value="#{visitanteBean.visitante.numeroCpf}"
                     required="true"
-                    validatorMessage="O CPF deve ter 12 caracteres">
-<!--              <f:validateLength minimum="12" />-->
+                    requiredMessage="O campo cpf nome é obrigatório"
+                    validatorMessage="O campo cpf deve ter 12 caracteres"
+            >
+              <f:validateLength minimum="12" maximum="12"/>
               <f:ajax event="blur" render="msg" />
-            </p:inputNumber>
+            </p:inputText>
           </div>
           <div class="p-field">
-            <label for="rg">RG</label>
-            <p:inputNumber
+           <label for="rg">RG</label>
+            <p:inputText
                     id="rg"
+                    type="text"
                     value="#{visitanteBean.visitante.numeroRg}"
                     required="true"
-                    validatorMessage="O RG deve ter 8 caracteres"
+                    requiredMessage="O campo rg nome é obrigatório"
+                    validatorMessage="O campo rg deve ter 8 caracteres"
             >
-              <f:validateLength minimum="8" />
+              <f:validateLength minimum="8" maximum="8"/>
               <f:ajax event="blur" render="msg" />
-            </p:inputNumber>
+            </p:inputText>
           </div>
           <div class="p-field">
             <label for="image">Image</label>

@@ -27,7 +27,7 @@ public class VisitanteBean {
     private UploadedFile image;
 
     public String save() {
-        System.out.println(this.visitante);
+        System.out.println("aqui " + this.visitante);
         visitante.setImagePath( UploadService.write(image, "visitantes"));
         dao.create(visitante);
 

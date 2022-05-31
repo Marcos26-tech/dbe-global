@@ -15,9 +15,9 @@ public class Visitante {
     private Long idVisitante = 1L;
     private String nomeVisitante;
     private LocalDate dataNascimento;
-    private Integer numeroCpf;
-    private Integer numeroRg;
-    private Integer NumeroDigitoRg;
+    private String numeroCpf;
+    private String numeroRg;
+    private String NumeroDigitoRg;
     private LocalDate dataCadastro = LocalDate.now();
     private String imagePath;
 
@@ -36,8 +36,8 @@ public class Visitante {
     }
 
 
-    public Visitante(Long idVisitante, String nomeVisitante, LocalDate dataNascimento, Integer numeroCpf,
-                     Integer numeroRg, Integer numeroDigitoRg, LocalDate dataCadastro) {
+    public Visitante(Long idVisitante, String nomeVisitante, LocalDate dataNascimento, String numeroCpf,
+                     String numeroRg, String numeroDigitoRg, LocalDate dataCadastro) {
         super();
         this.idVisitante = idVisitante;
         this.nomeVisitante = nomeVisitante;
@@ -49,11 +49,9 @@ public class Visitante {
     }
 
 
-
     public Long getIdVisitante() {
         return idVisitante;
     }
-
 
 
     public void setIdVisitante(Long idVisitante) {
@@ -61,11 +59,9 @@ public class Visitante {
     }
 
 
-
     public String getNomeVisitante() {
         return nomeVisitante;
     }
-
 
 
     public void setNomeVisitante(String nomeVisitante) {
@@ -73,11 +69,9 @@ public class Visitante {
     }
 
 
-
     public LocalDate getDataNascimento() {
         return dataNascimento;
     }
-
 
 
     public void setDataNascimento(LocalDate dataNascimento) {
@@ -86,40 +80,38 @@ public class Visitante {
 
 
 
-    public Integer getNumeroCpf() {
+    public String getNumeroCpf() {
         return numeroCpf;
     }
 
 
 
-    public void setNumeroCpf(Integer numeroCpf) {
+    public void setNumeroCpf(String numeroCpf) {
         this.numeroCpf = numeroCpf;
     }
 
 
 
-    public Integer getNumeroRg() {
+    public String getNumeroRg() {
         return numeroRg;
     }
 
 
 
-    public void setNumeroRg(Integer numeroRg) {
+    public void setNumeroRg(String numeroRg) {
         this.numeroRg = numeroRg;
     }
 
 
-
-    public Integer getNumeroDigitoRg() {
+    public String getNumeroDigitoRg() {
         return NumeroDigitoRg;
     }
 
 
 
-    public void setNumeroDigitoRg(Integer numeroDigitoRg) {
+    public void setNumeroDigitoRg(String numeroDigitoRg) {
         NumeroDigitoRg = numeroDigitoRg;
     }
-
 
 
     public LocalDate getDataCadastro() {
@@ -127,11 +119,9 @@ public class Visitante {
     }
 
 
-
     public void setDataCadastro(LocalDate dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-
 
 
     @Override
@@ -140,10 +130,5 @@ public class Visitante {
                 + dataNascimento + ", numeroCpf=" + numeroCpf + ", numeroRg=" + numeroRg + ", NumeroDigitoRg="
                 + NumeroDigitoRg + ", dataCadastro=" + dataCadastro + "]";
     }
-
-
-
-
-
 
 }
